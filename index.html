@@ -3,67 +3,53 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Dietology Team">
-    <meta name="description" content="Welcome to Dietology, your partner in innovative dieting solutions.">
-    <meta name="keywords" content="Diet, Health, Obesity, Diabetes, Nutrition">
-    <title>Home - Dietology</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>DIETOLOGY</title>
+    <meta name="author" content="Dietology">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/Dietology_Logo_Concept_2.png" />
+ 
 </head>
 <body>
     <header>
-            <h1>Welcome to <strong>Dietology</strong></h1>
             <nav>
+                <span class="hamburger" onclick="toggleMenu()">☰</span>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="approach.html">Our Approach</a></li>
                     <li><a href="stories.html">Success Stories</a></li>
-                    <li><a href="contact.html">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
         </header>
-        
+        <script>
+            function toggleMenu() {
+                document.querySelector("nav ul").classList.toggle("show");
+            }
+        </script>
+ 
+        <section>
+            <h1>Dietology</h1>
+            <article>
+                <h2> Anything</h2>
+                <section class="text-content">
+                    <p>your text </p>
+                </section>
+                <figure>
+                    <img src="Images/3.webp" alt="SFR" title="Stress" class="content-img">
+                </figure>
+            </article>
+        </section>
+        <section class="cookies-message">
+            <p>This website uses cookies to ensure you get the best experience on our website. <button
+                    onclick="this.parentElement.style.display='none'">Accept</button></p>
+        </section>
         <footer>
-            <form action="#" method="post">
-                <fieldset>
-                    <legend>Subscribe to Our Newsletter</legend>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    <input type="submit" value="Subscribe">
-                </fieldset>
-            </form>
-            <p>&copy; 2024 <em>Dietology</em>®. All rights reserved.</p>
+            Dietology
+            &amp;All Rights Reserved &copy; 2024 NAU &#174;
         </footer>
-        
-    </header>
-
-    <section id="home">
-        <article>
-            <figure>
-                <img src="dietology-clinic.jpg" alt="Exterior of Dietology Clinic" title="Dietology Clinic">
-                <figcaption>The <strong>Dietology</strong> Clinic: Your partner in health.</figcaption>
-            </figure>
-            <p>
-                At <em>Dietology</em>™, we use innovative dieting methods to transform lives. From managing obesity 
-                to combating diabetes and autoimmune diseases, our team of experts is here to guide you every step 
-                of the way.
-            </p>
-            <a href="about.html" class="btn">Learn More</a>
-        </article>
-    </section>
-
-    <footer>
-        <aside id="cookies-message">
-            <p>
-                We use cookies to enhance your experience. By continuing to browse, you accept our 
-                <a href="#privacy-policy">privacy policy</a>.
-            </p>
-            <label for="accept-cookies" id="accept-cookies-label">Accept</label>
-            <input type="checkbox" id="accept-cookies" />
-        </aside>
-        
-        
-    </footer>
 </body>
 </html>
+ 
